@@ -47,7 +47,6 @@ class Hangman extends Component {
     let ltr = evt.target.value;
     let tempWinner = false;
     // if all letters in answer are in set:
-    console.log(this.state.answer.split(""))
     this.setState(st => ({
       guessed: st.guessed.add(ltr),
       nWrong: st.nWrong + (st.answer.includes(ltr) ? 0 : 1),
